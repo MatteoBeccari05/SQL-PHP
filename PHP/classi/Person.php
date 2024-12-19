@@ -3,7 +3,8 @@
 class Person
 {
     //con php 8.0 crea in automatico gli attributi
-    public function __construct(private string $name, private int $age, private string $email)   //from php 8.0
+    const FAVOURITE_COLOR = "Green";
+    public function __construct(protected string $name, protected int $age, protected string $email)   //from php 8.0
     {
     }
 
@@ -35,6 +36,12 @@ class Person
     public function setEmail(string $email): void
     {
         $this->email = $email;
+    }
+
+    //self per ottenere la costante
+    public function introduce():string
+    {
+        return "Hi, my name is {$this->getName()}, I am  {$this->getAge()} years old, my email is {$this->getEmail()} and my preferd color is: ".self::FAVOURITE_COLOR.".";
     }
 
 
