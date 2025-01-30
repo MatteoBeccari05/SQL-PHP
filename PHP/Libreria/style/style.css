@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    background-image: url(https://preview.redd.it/7680-4320-gradient-blur-4k-wallapapers-v0-334c91w51tbb1.png?width=7680&format=png&auto=webp&s=0528d771be006deb28e7148b9e0b4ff7cd197c9e);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    background-color: #245c26;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 5%;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #329300;
+    color: #fff;
+    border-radius: 8px;
+}
+
+/* Responsività per schermi piccoli */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navbar a {
+        padding: 10px;
+    }
+}
+
+.titolo {
+    text-align: center;
+    font-size: 3.5em;
+    margin-top: 50px;
+    color: #4CAF50;
+}
+
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 50px;
+    color: #4CAF50;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 10%;
+}
+
+/* immagine footer */
+footer img {
+    width: 10px;
+    height: 10px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+/* Tabella libri */
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.1em;
+}
+
+td {
+    font-size: 1.0em;
+    color: #555;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 10px;
+    display: inline-block;
+
+
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100% ;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    font-size: 1.2em;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #245c26;
+}
+
+
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    width: 450px;
+    height: 450px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 70px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-info h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
