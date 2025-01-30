@@ -1,0 +1,37 @@
+.topnav{
+    background-color: #2c6a00;
+    padding: 20px;
+}
+
+.topnav a{
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+p{
+    color: #329300;
+    font-weight: bolder;
+}
+
+.footer{
+    position: fixed;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color: #2c6a00;
+    text-align: center;
+}
+
+.footer p{
+    color: white;
+}
+
+
+.active{
+    background-color: darkred;
+}
+
+
